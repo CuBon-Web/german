@@ -11,8 +11,8 @@
           <div class="box-hearder">
              <div class="row align-items-center">
                <div class="col-6 col-lg-4 col-md-4 header-logo text-left">
-                  <a href="{{route('home')}}" class="logo-wrapper" title="Sudes Nest">
-                  <img width="360" height="96" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="{{$setting->logo}}" alt="Sudes Nest" class="lazyload">
+                  <a href="{{route('home')}}" class="logo-wrapper" title="{{$setting->company}}">
+                  <img width="360" height="96" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="{{$setting->logo}}" alt="{{$setting->company}}" class="lazyload">
                   </a>
                </div>
                <div class="col-6 col-lg-8 col-md-8 header-right">

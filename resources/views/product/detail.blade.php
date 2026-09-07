@@ -68,9 +68,9 @@ $khuyenmai = json_decode($product->preserve);
 </section>
 <section class="product layout-product" itemscope itemtype="https://schema.org/Product">
    <meta itemprop="category" content="Yến nước chưng đường phèn">
-   <meta itemprop="url" content="//sudes-nest.mysapo.net/set-6-thuong-vy-yen-dao">
+   <meta itemprop="url" content="{{url()->current()}}">
    <meta itemprop="name" content="{{$product->name}}">
-   <meta itemprop="image" content="http://bizweb.dktcdn.net/thumb/grande/100/506/650/products/set-6-thuong-vy-yen-dao.jpg?v=1708618693627">
+   <meta itemprop="image" content="{{url(''.$img[0])}}">
    <meta itemprop="description" content="">
    <div class="d-none" itemprop="brand" itemtype="https://schema.org/Brand" itemscope>
       <meta itemprop="name" content="Thượng Vy Yến đảo" />
@@ -85,16 +85,16 @@ $khuyenmai = json_decode($product->preserve);
       <link itemprop="availability" href="http://schema.org/InStock">
       <meta itemprop="priceCurrency" content="VND">
       <meta itemprop="price" content="799000">
-      <meta itemprop="url" content="https://sudes-nest.mysapo.net/set-6-thuong-vy-yen-dao">
+      <meta itemprop="url" content="{{url()->current()}}">
       <span itemprop="UnitPriceSpecification" itemscope itemtype="https://schema.org/Downpayment">
          <meta itemprop="priceType" content="799000">
       </span>
       <meta itemprop="priceValidUntil" content="2099-01-01">
    </div>
-   <div class="d-none hidden" id="https://sudes-nest.mysapo.net" itemprop="seller" itemtype="http://schema.org/Organization" itemscope>
-      <meta itemprop="name" content="Sudes Nest" />
-      <meta itemprop="url" content="https://sudes-nest.mysapo.net" />
-      <meta itemprop="logo" content="http://bizweb.dktcdn.net/100/506/650/themes/944598/assets/logo.png?1713594904727" />
+   <div class="d-none hidden" id="{{url()->current()}}" itemprop="seller" itemtype="http://schema.org/Organization" itemscope>
+      <meta itemprop="name" content="{{$setting->company}}" />
+         <meta itemprop="url" content="{{url()->current()}}" />
+      <meta itemprop="logo" content="{{$setting->logo}}" />
    </div>
    <div class="container">
       <div class="details-product">
