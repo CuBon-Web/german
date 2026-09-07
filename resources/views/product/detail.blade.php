@@ -67,13 +67,12 @@ $khuyenmai = json_decode($product->preserve);
    </div>
 </section>
 <section class="product layout-product" itemscope itemtype="https://schema.org/Product">
-   <meta itemprop="category" content="Yến nước chưng đường phèn">
+   <meta itemprop="category" content="{{languageName($product->cate->name)}}">
    <meta itemprop="url" content="{{url()->current()}}">
    <meta itemprop="name" content="{{$product->name}}">
    <meta itemprop="image" content="{{url(''.$img[0])}}">
    <meta itemprop="description" content="">
    <div class="d-none" itemprop="brand" itemtype="https://schema.org/Brand" itemscope>
-      <meta itemprop="name" content="Thượng Vy Yến đảo" />
    </div>
    <meta itemprop="model" content="">
    <div class="d-none hidden" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
@@ -84,10 +83,10 @@ $khuyenmai = json_decode($product->preserve);
       </div>
       <link itemprop="availability" href="http://schema.org/InStock">
       <meta itemprop="priceCurrency" content="VND">
-      <meta itemprop="price" content="799000">
+      <meta itemprop="price" content="{{$product->price}}">
       <meta itemprop="url" content="{{url()->current()}}">
       <span itemprop="UnitPriceSpecification" itemscope itemtype="https://schema.org/Downpayment">
-         <meta itemprop="priceType" content="799000">
+         <meta itemprop="priceType" content="{{$product->price}}">
       </span>
       <meta itemprop="priceValidUntil" content="2099-01-01">
    </div>
